@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <link href="./index.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--navbar here  -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid" style="font-size: 2em;">
+              <a class="navbar-brand display-1" style="font-size:calc(100% + 1.5vw); margin-left:10px; margin-right:50px;" href="#">Hali Huang</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About Me |</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#research">Research |</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects |</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="https://github.com/halihuang" target=”_blank”><img src="/img/icons/github.png" alt="" width="30" height="30" class="d-inline-block align-text-top"></a>
+                    <a href="https://www.linkedin.com/in/hali-huang-42773918b/" target=”_blank”><img src="/img/icons/linkedin.png" alt="" width="30" height="30" class="d-inline-block align-text-top mx-2"></a>
+                    <a href="mailto:halihuang22@gmail.com" target=”_blank”><img src="/img/icons/mail.png" alt="" width="40" height="30" class="d-inline-block align-text-top me-3"></a>
+                </span>
+              </div>
+            </div>
+        </nav>
+        
+        <section id="about">
+            <div class="bg-dark bg-gradient d-flex bg-opacity-80 p-5">
+                <div class="container">
+                    <div class="row text-white ">
+                        <div class="display-3" class="text-center mb-5 text-decoration-underline">
+                            About Me
+                        </div>
+                        <div class="col-md-5 text-right" style="font-size:calc(100% + 0.75vw);">
+                            <br>
+                            Hello, I'm Hali Huang, currently a rising sophomore at MIT. I'm majoring in 6-3 (Computer Science). I enjoy programming all kinds of things from silly to beneficial, playing video games, and reading novels.
+                            <br><br>
+                            
+                            Feel free to check out my <a class="blue" href="https://github.com/halihuang" target=”_blank”>Github</a>, <a class="blue" target=”_blank” href="https://www.linkedin.com/in/hali-huang-42773918b/">LinkedIn</a>, <a class="blue" href="./cv.pdf" download="cv.pdf">CV</a>, or any of the featured projects below!
+                            <br><br>
+                        </div>
+                        <div class="col-md-7 text-center p-5" >
+                            <img src="/img/profile.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            </div>
+            <!-- contains picture -->
+            <!-- intro, school, major, hobbies -->
+        </section>
+        <div class="display-block p-5" id="content">
+            <section id="research" class="mb-5">
+                <!-- 2 urops, include github link -->
+                <div class="container" id="module">
+                    <div class="display-3" class="text-center mb-5">
+                        Research
+                    </div>
+
+                    <!-- transient -->
+                    <div class="row mb-5">
+                        <!-- text -->
+                        <div class="col-md">
+                            <div class="h3">
+                                Transient Epoch Time Prediction
+                            </div>
+                            <div class="h6  text-muted" class="mb-5">
+                                Summer 2022
+                            </div>
+                            <p>&emsp;&emsp;At the MIT Kavli Institute of astrophysics, I worked on training a real time neural network to 
+                                predict the time of maximum light or epoch time of transients, objects that change in brightness 
+                                in the night sky. Transients include supernovae, kilanovae, gamma-ray bursts, and more. What's the point of this? Transients are important objects in modern astronomy and have 
+                                are involved indiscovery of the accelerating expansion of the universe, production of the universe’s heavy elements, the detection of gravitational waves
+                                and more. But with 10+ million transient alerts every night and limited resources for observation, it becomes important to determine and which 
+                                transients should be observed at a given time. By predicting the time of maximum light, we learn when to observe a transient to capture the 
+                                rise and fall of its lightcurve as well as observe early events. <br>&emsp;&emsp;We fed the network light curve data obtained from two surveys TESS (Transiting Exoplanet Survey Satellite)
+                                and ZTF (Zwicky Transient Facility). The differences in the cadence, gaps, duration of each survey's observations provide a clearer picture of the
+                                transient when combined. My work also involved preprocessing the light curves to prepare it for the network. The model is trained to predict values at each timestep
+                                of the curve, making sure it can function on incomplete curves as seen to the right. It was a pleasure to learn more about astronomy, data science, and machine 
+                                learning over this summer. Currently, the paper is in progress.
+                            </p>
+                            <a href="https://github.com/halihuang/TESSEpochTime" target="_blank">Github</a>
+                        </div>
+                        <div class="col-md text-center">
+                            <div class="h6  text-muted">
+                                TESS Curve
+                            </div>
+                            <img src="/img/tess.png" class="img-fluid mb-4" alt="" >
+                            <div class="h6  text-muted">
+                                ZTF Curve
+                            </div>
+                            <img src="/img/ztf.png" id="ztf" class="img-fluid mb-4" alt="">
+                        </div>
+                   
+                        <div class="row ">
+                            <div class="col text-center">
+                                <div class="h6 text-muted">
+                                    Prediction
+                                </div>
+                                <img src="/img/pred.png" class="img-fluid ">
+                            </div>  
+                        </div>
+                    </div>
+                    <!-- mapping -->
+                    <div class="row">
+                        <div class="h3" class="mb-5" >
+                            Indoor IOT Mapping
+                        </div>
+                        <div class="h6  text-muted" class="mb-5">
+                            January 2022
+                        </div>
+                        <!-- text -->
+                        <div class="col-md">
+                            <p>I worked with the MIT Signal Kinetics Lab to create 2D maps of indoor spaces from stereo camera footage. Objects localized through RFID sensing would be placed on these maps. The team saw
+                                a lot of potential in the project for uses in warehouses and stores; placing RFID tags on items and then mapping the location could make locating items and keeping inventory
+                                much quicker and easier. The low price of RFID tags makes doing this feasible. I mainly worked on the 2D mapping side, using RTABMap and OpenCV in C++. 
+                            </p>
+                            <a href="https://github.com/halihuang/map-builder-INDOOR-IOT" target="_blank">Github</a>
+                        </div>
+                        <div class="col-md text-center">
+                            <img src="/img/mapping.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+                
+        
+            </section>
+    
+            <section id="projects">
+                <div class="container">
+                    <!-- interesting projects/experience to show off -->
+                    <div class="display-3" class="text-center mb-5">
+                        Projects
+                    </div>
+                    <div class="row">
+                        <div class="h3" class="mb-5">
+                            LatinWiki
+                        </div>
+                        <div class="h6  text-muted" class="mb-5">
+                            June 2018 - July 2020
+                        </div>
+                        <div class="col-md">
+                            <p>LatinWiki is a VueJS web app that is an all-in-one English to Latin translator and Latin dictionary. When I was studying Latin, I found that it was tedious to
+                                translate a word using Google translate and then have to rifle through a real dictionary or something like Wiktionary for more about the word. In Latin, you
+                                really need to know more than just the translated form of a word to apply it. For example, in Latin the form of a noun changes based on how its being used in a sentence
+                                (eg. as a subject, object, possessive) Without knowing the declension and gender of a noun, you wouldn't be able to write it in its proper case. 
+                                LatinWiki provides that important information about any latin word beyond just english meanings, including declension, conjugation, gender, derived terms, and more, pulled 
+                                from a reliable source in Wiktionary. Helpful features like history and saved words also make translation even easier.
+                                It was really designed to make my life in class easier so it's pretty handy to use.
+                            </p>
+                            <a href="https://halihuang.github.io/LatinWiki/" target="_blank">View Web App</a><br>
+                            <a href="https://github.com/halihuang/LatinWiki" target="_blank">Github</a>
+                        </div>
+                        <div class="col-md text-center">                            
+                            <img src="/img/latinwiki.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="h3" class="mb-5">
+                            Merry Machine
+                        </div>
+                        <div class="h6  text-muted" class="mb-5">
+                            July 2020
+                        </div>
+                        <!-- text -->
+                        <div class="col-md-6">
+                            <p>Merry Machine is a website that categorizes news articles by their sentiment about their subject (positive, neutral, negative) using machine learning. It was created by me and a friend, Amar Maksumic, for the Bay
+                                Areas Hacks Hackathon for which it won 2nd Place Main Prize. Fondly dubbed Merry Machine for its ability to decide whether an article is merry or not. It was made in a short amount of time 
+                            but definitely had me working on a lot of various things including webscraping the articles, machine learning, creating a frontend and backend, and connecting them through websockets. The project 
+                            sadly no longer functions because we didn't want to keep paying to keep it running, but it was a great learning experience. </p>
+                            <a href="https://github.com/halihuang/Merry-Machine" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        
+        
+        <!-- end with endbar -->
+        <section id="endbar" class="bg-dark d-flex bg-opacity-80 p-5" min-width="100%">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div><a href="#about" class="text-white">About Me</a></div>
+                        <div><a href="#research" class="text-white">Research</a></div>
+                        <a href="#projects" class="text-white">Projects</a>
+                    </div>
+                    <div class="col">
+                        <a href="https://github.com/halihuang" target=”_blank”><img src="/img/icons/GitHub-Mark.png" alt="" width="30" height="30" class="d-inline-block align-text-top"></a>
+                    <a href="https://www.linkedin.com/in/hali-huang-42773918b/" target=”_blank”><img src="/img/icons/linkedin.png" alt="" width="30" height="30" class="d-inline-block align-text-top mx-2"></a>
+                    <a href="mailto:halihuang22@gmail.com" target=”_blank”><img src="/img/icons/mail.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-3"></a>
+                    </div>
+                </div>
+        </section>
+    </body>
+</html>
